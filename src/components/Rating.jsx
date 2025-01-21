@@ -12,7 +12,7 @@ const Rating = () => {
         if (fillCriteria >= 0) {
           fillPercentage = 100;
         } else if (Math.abs(fillCriteria) < 1) {
-          fillPercentage = Math.abs(fillCriteria) * 100;
+          fillPercentage = (1 - Math.abs(fillCriteria)) * 100;
         } else {
           fillPercentage = 0;
         }
