@@ -17,3 +17,12 @@ body {
   align-items: center;
   gap: 12px;
 }
+
+svg {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
